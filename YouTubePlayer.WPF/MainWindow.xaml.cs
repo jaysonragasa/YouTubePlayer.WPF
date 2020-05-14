@@ -64,6 +64,8 @@ namespace YouTubePlayer.WPF
             {
                 gridTitleBar.MouseDown += GridTitleBar_MouseDown;
                 gridTitleBar.MouseUp += GridTitleBar_MouseUp;
+                gridSideDragBar.MouseDown += GridTitleBar_MouseDown;
+                gridSideDragBar.MouseUp += GridTitleBar_MouseUp;
                 gridParentContent.SizeChanged += GridParentContent_SizeChanged;
                 btnLoad.Click += BtnLoad_Click;
 
@@ -73,6 +75,8 @@ namespace YouTubePlayer.WPF
                     ForceOnTop();
                 };
             }
+
+            gridSideDragBar.Visibility = Visibility.Collapsed;
         }
 
         private void BtnLoad_Click(object sender, RoutedEventArgs e)
@@ -88,10 +92,12 @@ namespace YouTubePlayer.WPF
             if (e.NewSize.Width < 330 || e.NewSize.Height < 200)
             {
                 gridTitleBar.Visibility = Visibility.Collapsed;
+                gridSideDragBar.Visibility = Visibility.Visible;
             }
             else
             {
                 gridTitleBar.Visibility = Visibility.Visible;
+                gridSideDragBar.Visibility = Visibility.Collapsed;
             }
         }
 

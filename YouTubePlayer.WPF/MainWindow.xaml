@@ -12,9 +12,16 @@
         >
     
     <Grid x:Name="gridParentContent">
-        <Grid x:Name="gridContent" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="16" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="gridSideDragBar" Background="#FF2D2D30"/>
+
+        <Grid x:Name="gridContent" Grid.Column="1" />
         
-        <Grid x:Name="gridTitleBar" Height="32" VerticalAlignment="Top" Background="#FF2D2D30">
+        <Grid x:Name="gridTitleBar" Height="32" VerticalAlignment="Top" Background="#FF2D2D30" Grid.Column="0" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0">
                 <TextBlock Text="Youtube Id" Foreground="White" />
 
