@@ -1,3 +1,4 @@
+![https://raw.githubusercontent.com/jaysonragasa/YouTubePlayer.WPF/master/ss/temp05142020-193659.gif](https://raw.githubusercontent.com/jaysonragasa/YouTubePlayer.WPF/master/ss/temp05142020-193659.gif)
 # YouTube Player
 This is a very simple YouTube player that stays on top on every windows and taskbar. It uses CefSharp as a WebBrowser control.
 
