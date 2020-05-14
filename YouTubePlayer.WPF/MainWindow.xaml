@@ -1,0 +1,27 @@
+﻿<Window x:Class="YouTubePlayer.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="YouTube Player" Height="200" Width="340"
+        Topmost="True"
+        ResizeMode="CanResize"
+        WindowStyle="None"
+        Background="Black"
+        >
+    
+    <Grid x:Name="gridParentContent">
+        <Grid x:Name="gridContent" />
+        
+        <Grid x:Name="gridTitleBar" Height="32" VerticalAlignment="Top" Background="#FF2D2D30">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0">
+                <TextBlock Text="Youtube Id" Foreground="White" />
+
+                <TextBox x:Name="tbYTID" Width="200" Margin="10,0" />
+
+                <Button x:Name="btnLoad" Content=" Load " />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
