@@ -8,7 +8,7 @@
         Topmost="True"
         ResizeMode="CanResize"
         WindowStyle="None"
-        Background="Black"
+        Background="Black" Icon="yt64.png"
         >
     
     <Grid x:Name="gridParentContent">
@@ -19,15 +19,20 @@
 
         <Grid x:Name="gridSideDragBar" Background="#FF2D2D30" Cursor="Cross"/>
 
+        <!--<Grid Grid.Column="1">
+            <Image Source="appicon.png" Stretch="Uniform" VerticalAlignment="Center" Margin="50" />
+        </Grid>-->
         <Grid x:Name="gridContent" Grid.Column="1" />
 
         <Grid x:Name="gridTitleBar" Height="32" VerticalAlignment="Top" Background="#FF2D2D30" Grid.Column="0" Grid.ColumnSpan="2"  Cursor="Cross">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0">
-                <TextBlock Text="Youtube Id" Foreground="White" />
+                <Image Source="yt64.png" Stretch="Uniform" VerticalAlignment="Center" />
+                
+                <TextBlock Text=" Youtube Id" Foreground="White" VerticalAlignment="Center" />
 
-                <TextBox x:Name="tbYTID" Width="200" Margin="10,0" />
+                <TextBox x:Name="tbYTID" Width="150" Margin="10,0" VerticalAlignment="Stretch" Background="Transparent" Foreground="White" VerticalContentAlignment="Center" />
 
-                <Button x:Name="btnLoad" Content=" Load " />
+                <Button x:Name="btnLoad" Content=" Load " VerticalAlignment="Center" />
             </StackPanel>
         </Grid>
     </Grid>
