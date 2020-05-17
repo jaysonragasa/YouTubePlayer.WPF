@@ -73,6 +73,9 @@ namespace YouTubePlayer.WPF
                 _timer.Tick += (s, te) =>
                 {
                     ForceOnTop();
+
+                    // no, we do not want this.
+                    //this.Topmost = true;
                 };
             }
 
