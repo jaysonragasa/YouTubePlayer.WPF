@@ -2,7 +2,7 @@
 # YouTube Floating Player
 This is a very simple YouTube player stand-alone app that stays on top on every windows on your desktop and especially on taskbar. Well, at least it try to since the windows taskbar is, by default designed to be on top.  
   
-Back when I was still developing Windows Forms. Win32API is used everytime to all my projects just trying to manipulate how the standard controls work. My favorite website back then is [PINVOKE.NET](https://www.pinvoke.net/default.aspx/user32.setwindowpos)
+Back when I was still developing Windows Forms. Win32API is used everytime to all my projects just trying to manipulate how the standard controls look. My favorite website back then is [PINVOKE.NET](https://www.pinvoke.net/default.aspx/user32.setwindowpos)
   
 This app uses `SetWindowspos` API 
 ```csharp
