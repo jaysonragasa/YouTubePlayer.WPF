@@ -70,6 +70,8 @@ WPF has `Window.Topmost` property that does the same but it has a limit.
   
 The taskbar on windows has the same window placement and flag so when you move the floating player on top of the taskbar and you clicked on the taskbar, the player goes behind. There are no Win32API AFAIK that forces the window to ALWAYS be on top unless we put some timer to re-set the window z-index/placement which we did the same here in the floating player and this is where the `Window.Topmost` is not capable of doing so, that why we need that Win32API.  
   
+![https://raw.githubusercontent.com/jaysonragasa/YouTubePlayer.WPF/master/ss/temp05172020-091112.gif](https://raw.githubusercontent.com/jaysonragasa/YouTubePlayer.WPF/master/ss/temp05172020-091112.gif)  
+  
 This is written with WPF and using CefSharp component for web browser control and it does not need any support to any browsers just to run the app.
 <Br/>
 <Br/>
